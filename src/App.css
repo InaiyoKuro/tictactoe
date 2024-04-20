@@ -1,0 +1,96 @@
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    font-size: 1.2rem;
+    font-family: "Ubuntu";
+}
+  
+.name_left,.name_right{
+    background: #4B485F;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 50px 0;
+    line-height: 2rem;
+
+
+}
+  
+
+
+.title{
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    background: #4B485F;
+    font-size: 2.5rem;
+}
+
+.finished-state{
+    font-size: 2rem;
+}
+
+.square-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 0.7rem;
+}
+
+.playBtn{
+    outline: none;
+    font-size: 5rem;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 6rem;
+    background-color: #F26100;
+    font-family: "Happy Monkey";
+    border-radius: 10px;
+    font-weight: bold;
+    color: #fff;
+}   
+
+.swal2-popup {
+    font-size: 1.6rem !important;
+    font-family: "Ubuntu" !important;
+}
+
+.waiting{
+    overflow: hidden;
+    font-size: 2rem;
+}
+.wating-animation::after{
+    content: '';
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite
+}
+
+
+
+
+.current-circle{
+    background-color: #dd7f9f !important;
+}
+.current-cross{
+    background-color: rgb(63, 167, 240) !important;
+}
+
+@keyframes example {
+    0% {content: ''}
+    25% {content: '.'}
+    50% {content: '..'}
+    100% {content: '...'}
+}
